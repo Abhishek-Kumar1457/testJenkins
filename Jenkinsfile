@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
               echo 'Starting Build'
-              sh 'gcc --version'
+              sh 'sudo apt install gcc -y'
             }
         }
         stage('Test') {
