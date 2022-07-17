@@ -1,5 +1,5 @@
 pipeline {
-    agent {docker { image 'kernelci/build-gcc-7_arm:3.3.3' } }
+    agent any
     stages {
         stage('Build') {
             steps {
