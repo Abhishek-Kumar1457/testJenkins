@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
               echo 'Starting Build'
-              sh 'sudo apt install gcc -y'
+              sh 'echo "jenkins@321" |sudo apt install gcc -y -S'
             }
         }
         stage('Test') {
